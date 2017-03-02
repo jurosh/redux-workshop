@@ -1,6 +1,6 @@
-# redux-workshop
+# Redux Workshop
 
-*Simple redux workshop for react redux < 2 hours*
+*Simple redux workshop for redux (partially react) under 2 hours*
 
 
 # 0 | Introduction to redux
@@ -46,13 +46,13 @@ Hint - how to push redux action:
 store.dispatch({type: 'MY_ACTION'});
 ```
 
-Check `./1-native/index.html`. It already includes everything you will need.
+Check `./1-native/index.html`. It already includes every dependency you would need.
 
 Follow steps in code `./1-native/scripts.js`. Add/modify code only after step is defined.
 
-After **1-3** steps you should have function application core - no visible changes, but actions and store which will represent application UI.
+After **1-3** steps you should have function application core - no visible changes, but actions and store which represents application state.
 
-**4-6** will take state and render UI, connect actions.
+**4-6** will take application state and render UI. Afterwards is required to connect actions to action buttons.
 
 **BONUS STEP**
 
@@ -66,47 +66,50 @@ Text should update in realtime - after calculator change and also after input te
 
 # 2 | Redux with React and npm
 
-Recommended is also to install **React plugin for chrome**.
+To work with React is recommended to install: **React plugin for chrome**.
 
-Run `cd ./2-react/ && npm start` tu start development server on http://localhost:3000
+Run `cd ./2-react/ && npm start` to start development server on http://localhost:3000
 
 Store:
   - humans [
-      1: {
+    
+     1: {
+
         id: 1,
         photo: './images/human1.jpg',
         border: 'red',
         size: 3
       },
+
       2: {
+
         id: 2,
         photo: './images/human2.png',
         border: 'green',
         size: 2
       },
+
       3: {
+
         id: 3,
         photo: './images/human3.png',
         border: 'blue',
         size: 1
       }
+      
   ]
-  - listing [ 1, 2, 3 ]
+
+  - listing [1, 2, 3 ]
   - sorted [ 3, 1, 2 ]
 
-You will find TODOs in code where should be made changes to made application working.
+Search for TODOs in code and try to make sure you have working functionality:
 
-Try to make sure you have working functionality:
-
-- every "human" should have displayed image defined in state
-- changing "humans" colors (action and reducer is already functional)
+- Every "human" should have displayed image defined in state
+- Functionality of changing "humans" colors (action and reducer is already functional)
 - Increasing "humans" size
 - Decreasing humans size
-- Disable "Minus" button when size is really small
-- Disable "Plus" button when size is really big
-- You have 2 listings - editable and sorted
 - Every change should be updated in realtime in both listings
-- Add button should add new human
+- "Add new human" button should add new human to listings
 - BONUS: Add button to reset all images to some default size (eg. 25)
 
 See TODOs in:
@@ -117,5 +120,6 @@ See TODOs in:
 - src/reducers/human.js
 - BONUS: src/reducers/index.js
 
-Sorting (BONUS): note that action `STORE_SORTED_LISTING` will be fired  utomatically for you. You just need to modify sorting function in reducer/index.js
-and update reducer to store result.
+Sorting (BONUS) Note: action `STORE_SORTED_LISTING` will be fired  automatically for you. You just need to modify sorting function in `reducer/index.js` and update reducer to save result.
+
+Good luck.

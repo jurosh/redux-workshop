@@ -1,0 +1,57 @@
+body {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-family: Oswald;
+}
+
+.HumanListing-button {
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+
+.Human-block {
+  display: inline-block;
+  position: relative;
+}
+
+.Human-plus,
+.Human-minus {
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.5;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+
+.Human-plus:hover,
+.Human-minus:hover {
+  opacity: 1;
+}
+
+.Human-plus {
+  right: 20px;
+}
+
+.Human-minus {
+  left: 20px;
+}
+
+.Human-image {
+  cursor: pointer;
+  margin: 10px;
+  transition: all 1s;
+}
+
+.Human-image:hover {
+  box-shadow: 0px 0px 40px;
+}
