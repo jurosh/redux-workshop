@@ -1,6 +1,6 @@
 # Redux Workshop
 
-*Simple redux workshop for redux (partially react) under 2 hours*
+*Simple redux workshop (partially react) under 2 hours*
 
 
 # 0 | Introduction to redux
