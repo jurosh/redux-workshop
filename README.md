@@ -1,9 +1,6 @@
-See:
+# redux-workshop
 
-- src/actions/humans.js
-- # redux-workshop
-
-*Simple redux workshop for react redux &lt; 1.5 hours*
+*Simple redux workshop for react redux < 2 hours*
 
 
 # 0 | Introduction to redux
