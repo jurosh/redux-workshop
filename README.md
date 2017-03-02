@@ -22,6 +22,7 @@ On top of that, it provides a great developer experience, such as *live code edi
 
 - Nodejs + npm
 - Chrome with “Redux DevTools” plugin https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+- In workshop directory run `cd ./2-react/ && npm install` to install dependencies for lesson 2 (Please do it NOW as it may take some time).
 
 # 1 | Redux without React or npm
 
@@ -68,7 +69,7 @@ Text should update in realtime - after calculator change and also after input te
 
 To work with React is recommended to install: **React plugin for chrome**.
 
-Run `cd ./2-react/ && npm start` to start development server on http://localhost:3000
+Run `cd ./2-react/ && npm install && npm start` to start development server on http://localhost:3000
 
 Store:
   - humans [
